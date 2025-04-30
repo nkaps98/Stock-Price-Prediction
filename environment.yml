@@ -1,0 +1,19 @@
+name: stock_price_prediction 
+channels:
+  - defaults
+  - conda-forge    # Add other channels if needed
+dependencies:
+  - python=3.11     # Specify Python version
+  - numpy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - pip
+  - pip:
+    - transformers  # Pip-installed packages can go under this
+    - datasets
+    - yfinance
+    - torch
+    - yahoofinancials
+    - mpld3
+    - fuzzylab
